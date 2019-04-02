@@ -40,7 +40,7 @@
 			<button type="submit">Send</button>
 		</div>
 	</form>
-<!---- Radio Buttons --->
+<!---- Radio Buttons and Checkboxes --->
 	<h2>Multiple Choice Test</h2>
 	<form method="POST" action="http://request-inspector.glitch.me/">
 		<p>Where is Codeup located?</p>
@@ -79,9 +79,30 @@
 		<label>
 			<input type="checkbox" name="q3[]" value="susan_sarandon">Susan Sarandon
 		</label>
+		<br>
+		<label for="words">Which words start with P?</label>
+		<select id="words" name="words[]" multiple>
+			<option>Concrete</option>
+			<option>Peanut Butter</option>
+			<option>Pad Thai</option>
+			<option>Pickles</option>
+			<option>Seaweed</option>
+		</select>
 		<div>
 			<button type="submit">Submit</button>
 		</div>
 	</form>	
+<!---- Select Forms --->
+	<h2>Select Testing</h2>
+	<form method="POST" action="http://request-inspector.glitch.me/">
+		<label for="sky">Is the sky pink?</label>
+		<select id="sky" name="sky">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
 </body>
 </html>
