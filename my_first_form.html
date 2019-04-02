@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First HTML Form</title>
+</head>
+<body>
+	<h2>User Login</h2>
+	<form method="POST" action="http://request-inspector.glitch.me/">
+		<div>
+			<label for="username">Username: </label>
+			<input id="username" name="username" type="text" placeholder="Username">
+		</div>
+		<div>
+			<label for="password">Password: </label>
+			<input id="password" name="password" type="password" placeholder="Password">
+		</div>
+		<div>
+			<button type="submit">Login</button>
+		</div>
+	</form>
+<!---- Text and Text Area Exercise --->
+	<h2>Compose an Email</h2>
+	<form method="POST" action="http://request-inspector.glitch.me/">
+		<div>
+			<label for="email-to">To:</label>
+			<input id="email-to" name="email-to" type="text" placeholder="Email of recipient...">
+		</div>
+		<div>
+			<label for="email-from">From:</label>
+			<input id="email-from" type="text" name="email-from" placeholder="Email of sender...">
+		</div>
+		<div>
+			<label for="email-body">Email:</label>
+			<textarea id="email-body" name="email-body"></textarea>
+		</div>
+		<input type="checkbox" id="copy-to-sent" name="copy-to-sent" value="yes" checked>
+		<label for="copy-to-sent">Send a copy to your Sent Folder?</label>
+		<div>
+			<button type="submit">Send</button>
+		</div>
+	</form>
+<!---- Radio Buttons --->
+	<h2>Multiple Choice Test</h2>
+	<form method="POST" action="http://request-inspector.glitch.me/">
+		<p>Where is Codeup located?</p>
+		<label>
+			<input type="radio" name="q1" value="Budapest"> Budapest
+		</label>
+		<label>
+			<input type="radio" name="q1" value="London">London
+		</label>
+		<label>
+			<input type="radio" name="q1" value="San Antonio">San Antonio
+		</label>
+		<label>
+			<input type="radio" name="q1" value="Vancouver">Vancouver
+		</label>
+		<p>What brand are my tennis shoes?</p>
+		<label>
+			<input type="radio" name="q2" value="nike">Nike
+		</label>
+		<label>
+			<input type="radio" name="q2" value="fila">Fila
+		</label>
+		<label>
+			<input type="radio" name="q2" value="new_balance">New Balance
+		</label>
+		<label>
+			<input type="radio" name="q2" value="reebok"> Reebok
+		</label>
+		<p>Who are your favorite actors?</p>
+		<label>
+			<input type="checkbox" name="q3[]" value="ryan_reynolds">Ryan Reynolds
+		</label>
+		<label>
+			<input type="checkbox" name="q3[]" value="johnny_depp">Johnny Depp
+		</label>
+		<label>
+			<input type="checkbox" name="q3[]" value="susan_sarandon">Susan Sarandon
+		</label>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>	
+</body>
+</html>
