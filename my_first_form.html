@@ -40,6 +40,48 @@
 			<button type="submit">Send</button>
 		</div>
 	</form>
-
+<!---- Radio Buttons --->
+	<h2>Multiple Choice Test</h2>
+	<form method="POST" action="http://request-inspector.glitch.me/">
+		<p>Where is Codeup located?</p>
+		<label>
+			<input type="radio" name="q1" value="Budapest"> Budapest
+		</label>
+		<label>
+			<input type="radio" name="q1" value="London">London
+		</label>
+		<label>
+			<input type="radio" name="q1" value="San Antonio">San Antonio
+		</label>
+		<label>
+			<input type="radio" name="q1" value="Vancouver">Vancouver
+		</label>
+		<p>What brand are my tennis shoes?</p>
+		<label>
+			<input type="radio" name="q2" value="nike">Nike
+		</label>
+		<label>
+			<input type="radio" name="q2" value="fila">Fila
+		</label>
+		<label>
+			<input type="radio" name="q2" value="new_balance">New Balance
+		</label>
+		<label>
+			<input type="radio" name="q2" value="reebok"> Reebok
+		</label>
+		<p>Who are your favorite actors?</p>
+		<label>
+			<input type="checkbox" name="q3[]" value="ryan_reynolds">Ryan Reynolds
+		</label>
+		<label>
+			<input type="checkbox" name="q3[]" value="johnny_depp">Johnny Depp
+		</label>
+		<label>
+			<input type="checkbox" name="q3[]" value="susan_sarandon">Susan Sarandon
+		</label>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>	
 </body>
 </html>
