@@ -1,0 +1,52 @@
+/*
+this content is stored in a file named "site.css"
+in a directory named "css"
+*/
+
+
+
+.h2 {
+    color: blue;
+    text-decoration: underline;
+    font-family: "Roboto-Mono", Roboto, sans-serif;
+}
+
+.background {
+	background-color: #FFFFCC;
+	background-image: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/27.jpg);
+	background-image: no-repeat;
+
+}
+
+ul{
+	list-style: square inside
+}
+
+p{
+	font-family: "Roboto-Mono",Roboto, sans-serif;
+}
+
+table, th, td{
+	padding: 5px;
+	border: 1px solid black;
+	font-size: 1.5em;
+}
+
+a:hover, a:active{
+	color: blue;
+}
+
+a, a:visited{
+	color: green;
+}
+/** 
+Open up your hello_world.html file from your Codeup folder.
+Add a style to change the color of the headers on your page and make them underlined.
+Add a style to change the background color of the page.
+Add a style to add a background image to your page. Search how to manipulate the position, sizing of this background image.
+Add a style to change the list-style to something other than the default bullet.
+Add a style to change the font for the entire page. Use google fonts if you would like Google Fonts.
+Add a style to change the table, table cells td and rows tr padding and font sizes.
+Add a style to alter the anchor tags and its different states. (e.g. link, visited, hover and active).
+Continue experimenting with styles to increase the visual appeal of the page. 
+**/
