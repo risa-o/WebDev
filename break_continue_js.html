@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		random_number = Math.floor((Math.random()*50)+1)
+		while (random_number % 2 == 0){
+			var random_number = Math.floor((Math.random()*50)+1);
+		}
+		console.log("Random number is " + random_number);
+		for (var i = 1; i < 100; i+=2){
+			console.log("Odd Number: " + i);
+			if (random_number == i){
+				console.log('Break Point!');
+				break;
+			}
+		}
+
+	</script>	
+</body>
+</html>
