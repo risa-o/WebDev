@@ -11,11 +11,12 @@
 		}
 		console.log("Random number is " + random_number);
 		for (var i = 1; i < 100; i+=2){
-			console.log("Odd Number: " + i);
+			
 			if (random_number == i){
-				console.log('Break Point!');
-				break;
+				console.log('Skip Point! Here: ' + random_number);
+				continue;
 			}
+			console.log("Odd Number: " + i);
 		}
 
 	</script>	
