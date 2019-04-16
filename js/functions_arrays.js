@@ -31,9 +31,7 @@
 
 
 	function isEmpty(input){
-		if (input == "") or (input == null){
-			return true;
-		} else if(input == null){
+		if (input == "" || input == null){
 			return true;
 		} else if(input == undefined){
 			return false;
@@ -43,6 +41,8 @@
 			return false;
 		}
 	};
+
+	function isEmpty2
 
 	console.log(isEmpty(k))
 })();
