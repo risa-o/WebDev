@@ -33,16 +33,13 @@
 	function isEmpty(input){
 		if (input == "" || input == null){
 			return true;
-		} else if(input == undefined){
+		} else if(input == undefined || input == true){
 			return false;
-		} else if (input == true){
-			return false;
-		}else {
+		} else {
 			return false;
 		}
 	};
 
-	function isEmpty2
 
 	console.log(isEmpty(k))
 })();
