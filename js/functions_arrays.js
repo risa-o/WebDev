@@ -28,18 +28,36 @@
 	var y = " kiwi "
 	var z = " mango"
 
-
-
 	function isEmpty(input){
-		if (input == "" || input == null){
+		if (input === "" || input === null){
 			return true;
-		} else if(input == undefined || input == true){
+		} else if(input === undefined || input === true){
 			return false;
-		} else {
+		} else if(Array.isArray(input) && input.length == 0){
+			return true;
+		} else{
 			return false;
 		}
 	};
+	console.log(isEmpty(a));
+
+	function first(input){
+		if (Array.isArray(input) && input.length == 0){
+			return [];
+		} else{
+		return input[0];
+		}
+	};
+	console.log(first(w));
+
+	function second(input){
+		if (input.length < 2 && Array.isArray(input)){
+			return [];
+		} else {
+			return input[1];
+		}
+	}
+	console.log(second(u));
 
 
-	console.log(isEmpty(k))
 })();
