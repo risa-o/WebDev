@@ -16,7 +16,7 @@
 	var m = "Jane"
 	var n = "jk"
 	var o = "Q"
-	//var p = { firstName: "Jane" :, lastName : "Janeway"}
+	var p = {firstName: "Jane" , lastName : "Janeway"}
 	var q = NaN
 	var r = alert
 	var s = console.log
@@ -59,5 +59,30 @@
 	}
 	console.log(second(u));
 
+	function third(input){
+		if (input.length < 3 && Array.isArray(input)){
+			return [];
+		} else {
+			return input[3];
+		}
+	}
+	console.log(third(u));
 
+	function last(input){
+		if (input.length <1 && Array.isArray(input)){
+			return [];
+		} else {
+			return input[input.length-1];
+		}
+	}
+	console.log(last(g));
+
+	function nextToLast(input){
+		if (input.length <2 && Array.isArray(input)){
+			return [];
+		} else {
+			return input[input.length-2];
+		}
+	}
+	console.log(nextToLast(j));
 })();
