@@ -99,6 +99,38 @@
 	}
 
 	function isTrue(boolean){
-		
+		return boolean === true;
 	}
+
+	function isFalse(boolean){
+		return boolean === false;
+	}
+
+	function isTruthy(input){
+		return input == true;
+	}
+
+	function isFalsy(input){
+		return input == false;
+	}
+
+	function isVowel(input){
+		input = input.toLowerCase();
+		return input === "a" || input === "e" || input === "i" || input ==="o" || input ==="u"
+	}
+
+	function isConsonant(input){
+		input = input.toLowerCase();
+		return input !== "a" && input !== "e" && input !== "i" && input !== "o" && input !== "u"
+	}
+
+	function isCapital(input){
+		return input === input.toUpperCase();
+	}
+
+	function isLowerCase(input){
+		return input === input.toLowerCase();
+	}
+
+	console.log(isLowerCase("F"))
 })();
