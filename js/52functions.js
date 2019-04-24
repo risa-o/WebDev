@@ -10,14 +10,14 @@
     }
 	console.log(isNumeric('banana'));
 
-	// function isNumeric2(input){
-	// 	if(isNan(input)){
-	// 		return true;
-	// 	} else{
-	// 		return false;
-	// 	}
-	// }
-	// console.log(isNumeric2(13))
+	function isNumeric2(input){
+	 	if(isNaN(input)){
+	 		return false;
+	 	} else{
+	 		return true;
+	 	}
+	 }
+	console.log(isNumeric2(13))
 
 	function isEqual(input1,input2){
 		if (input1 == input2){
@@ -66,4 +66,39 @@
 		return input < 0;
 	}
 	console.log(isNegative(-3))
+
+	function identity(input){
+		return input;
+	}
+	console.log(identity('testing'))
+
+	function isFive(input){
+		return input == 5;
+	}
+	function addFive(input){
+		return input + 5;
+	}
+	function isMultipleOfFive(input){
+		return input % 5 == 0;
+	}
+
+	function isThree(input){
+		return input == 3;
+	}
+
+	function isMultipleofThree(input){
+		return input % 3 == 0;
+	}
+
+	function isMultipleOfThreeAndFive(input){
+		return (input % 3 == 0) && (input % 5 == 0);
+	}
+
+	function isMultipleOf(target,n){
+		return input % n == 0;
+	}
+
+	function isTrue(boolean){
+		
+	}
 })();
